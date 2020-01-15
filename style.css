@@ -229,6 +229,35 @@ a:visited {
     height: 691px;
 }
 
+.ipad-image {
+    display: flex;
+    align-self: center;
+}
+
+.ipad-image img {
+    width: 1010px;
+    height: 773px;
+}
+
+.canopy-image {
+    display: flex;
+    align-self: center;
+}
+
+.canopy-image img {
+    width: 1000px;
+    height: 850px;
+}
+
+.travel-mode-modal {
+    align-self: center;
+}
+
+.travel-mode-modal img {
+    width: 375px;
+    height: 394px;
+}
+
 
 /************** Section 1 - Hero Section ***************/
 
@@ -257,8 +286,6 @@ a:visited {
     "image-container";
     grid-row-gap: var(--space-48);
 }
-
-
 
 
 
@@ -336,6 +363,8 @@ a:visited {
 /* .testimonial-container {
     grid-row: 3 / -1;
 } */
+
+
 
 /************** Section 4 - Articles ***************/
 
