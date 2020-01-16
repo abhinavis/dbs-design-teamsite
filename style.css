@@ -31,7 +31,7 @@ html, body {
     --color-bg: #fff;
     --color-black: #2b2b2b;
     --color-red: #ff3e3e;
-    --color-grey: #8a8a8a;
+    --color-grey: #b3b3b3;
     --space-220: 13.75em;
     --space-64: 4em;
     --space-48: 3em;
@@ -159,14 +159,11 @@ a:visited {
     transition: all 0.7s;
     padding-bottom: 6px;
 
-
-
 }
 
 .links a:hover {
     border-bottom: 1px solid #ff3e3e;
-    
-    
+
 }
 
 .links {
@@ -387,6 +384,7 @@ a:visited {
     font-size: var(--size-18);
     font-family: var(--font-sans);
     color: var(--color-grey);
+    font-weight: 500;
 }
 
 .why-desc, .outcome-desc {
@@ -408,6 +406,79 @@ a:visited {
     margin-bottom: 48px;
 }
 
+
+
+/************** PEOPLE.HTML ***************/
+/************** Section 2 - Better together ***************/
+
+.better-together {
+    margin-top: -120px;
+}
+
+
+
+/************** Section 3 - Values ***************/
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 48px;
+}
+
+.value-1 {
+    background: #FCE4FF;
+    padding: 32px;
+}
+
+.value-2 {
+    background: #E4F3FF;
+    padding: 32px;
+}
+.value-3 {
+    background: #FFE4E4;
+    padding: 32px;
+}
+.value-4 {
+    background: #FEF4F1;
+    padding: 32px;
+}
+.value-5 {
+    background: #FFE4ED;
+    padding: 32px;
+}
+
+.value-main {
+    text-align: center;
+    align-self: center;
+}
+
+.value-main > .value-title > p {
+    font-size: var(--size-40);
+}
+
+
+.value-number {
+    font-family: var(--font-sans);
+    font-size: var(--size-24);
+    color: var(--color-black);
+    padding-bottom: 16px;
+}
+
+.value-title {
+    font-family: var(--font-serif);
+    font-size: var(--size-32);
+    font-weight: var(--weight-bold);
+    padding-bottom: 16px;
+
+}
+
+.value-desc {
+    font-family: var(--font-sans);
+    font-size: var(--size-22);
+    color: var(--color-black);
+    width: 95%;
+}
 
 /************** Section 4 - Articles ***************/
 
