@@ -255,6 +255,15 @@ a:visited {
     height: 394px;
 }
 
+.container {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
 
 /************** Section 1 - Hero Section ***************/
 
@@ -463,6 +472,10 @@ a:visited {
 
 .value-main .value-title {
     font-size: var(--size-40);
+}
+
+.value-main .value-desc {
+    font-size: var(--size-22);
 }
 
 .value-1-img, .value-2-img, .value-3-img, .value-4-img, .value-5-img {
