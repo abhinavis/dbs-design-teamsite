@@ -422,30 +422,38 @@ a:visited {
 .values {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 48px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -80px;
 }
 
 .value-1 {
     background: #FCE4FF;
-    padding: 32px;
+    padding: 40px;
+    position: relative;
 }
 
 .value-2 {
     background: #E4F3FF;
-    padding: 32px;
+    padding: 40px;
+    position: relative;
 }
 .value-3 {
     background: #FFE4E4;
-    padding: 32px;
+    padding: 40px;
+    position: relative;
 }
 .value-4 {
     background: #FEF4F1;
-    padding: 32px;
+    padding: 40px;
+    position: relative;
 }
 .value-5 {
     background: #FFE4ED;
-    padding: 32px;
+    padding: 40px;
+    position: relative;
 }
 
 .value-main {
@@ -453,14 +461,22 @@ a:visited {
     align-self: center;
 }
 
-.value-main > .value-title > p {
+.value-main .value-title {
     font-size: var(--size-40);
+}
+
+.value-1-img, .value-2-img, .value-3-img, .value-4-img, .value-5-img {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+
 }
 
 
 .value-number {
     font-family: var(--font-sans);
-    font-size: var(--size-24);
+    font-size: var(--size-20);
     color: var(--color-black);
     padding-bottom: 16px;
 }
@@ -475,9 +491,37 @@ a:visited {
 
 .value-desc {
     font-family: var(--font-sans);
-    font-size: var(--size-22);
+    font-size: var(--size-18);
     color: var(--color-black);
     width: 95%;
+}
+
+
+/************** Section-4 - Team Pictures ***************/
+
+.team-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 64px;
+    grid-row-gap: 100px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -200px;
+}
+
+.dept-img {
+    max-width: 100%;
+    min-width: 345px;
+    height: 450px;
+    background: #FFE4ED;
+}
+
+.dept-name {
+    font-family: var(--font-serif);
+    font-size: var(--size-32);
+    color: var(--color-black);
+    padding-top: 16px;
 }
 
 /************** Section 4 - Articles ***************/
