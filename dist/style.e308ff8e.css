@@ -637,7 +637,7 @@ a:visited {
 
 .job-content {
     font-family: var(--font-sans);
-    font-size: var(--size-16);
+    font-size: var(--size-18);
     color: var(--color-black);
     opacity: 0.7;
 }
