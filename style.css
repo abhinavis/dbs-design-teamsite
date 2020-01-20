@@ -122,12 +122,8 @@ a:visited {
     transform: translateY(0);
   }
 
-  .hidetext-1 {
-      animation-delay: 0.2s;
-  }
-  .hidetext-2 {
-      animation-delay: 0.5s;
-  }
+
+
 
 
 /************** Main Container & Global Classes ***************/
@@ -369,7 +365,7 @@ a:visited {
 }
 
 
-/************** WORK.HTML ***************/
+/**************?WORK.HTML ***************/
 /************** Section 3 (Our Work) - Peek Balance ***************/
 
 .section-3-peek {
@@ -419,6 +415,7 @@ a:visited {
     font-family: var(--font-sans);
     color: var(--color-black);
     padding-bottom: 4px;
+    line-height: 1.25;
 }
 
 .principle-1, .principle-2, .principle-3, .principle-4, .principle-5 {
@@ -433,9 +430,9 @@ a:visited {
     margin-bottom: 48px;
 }
 
+/*************?--End of Work Section--***************/
 
-
-/************** PEOPLE.HTML ***************/
+/*************?PEOPLE.HTML ***************/
 /************** Section 2 - Better together ***************/
 
 .better-together {
@@ -554,6 +551,157 @@ a:visited {
     color: var(--color-black);
     padding-top: 16px;
 }
+
+/*************?--End of PEOPLE.html--***************/
+
+
+
+/*************?CAREERS.html--***************/
+
+.section-2-hh {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.hh-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 1320px;
+    margin: 0 auto;
+    grid-gap: 33px;
+    margin-top: -50px;
+}
+
+.hh-3 {
+    align-self: end;
+}
+
+.hh-2 {
+    margin-left: -228px;
+}
+
+.section-3-ceo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.point-1 .no-1 {
+    font-family: var(--font-sans);
+    font-size: var(--size-20);
+    color: #8a8a8a;
+}
+
+.point-1 p {
+    font-family: var(--font-sans);
+    font-size: var(--size-20);
+    color: var(--color-black);
+    margin-left: 16px;
+}
+
+.point-1 {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.office-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 1320px;
+    grid-gap: 33px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.off-3 {
+    margin-top: 29px;
+}
+
+.section-6pm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.job-type {
+    font-family: var(--font-serif);
+    font-size: var(--size-24);
+    color: var(--color-black);
+    margin-bottom: 8px;
+    font-weight: var(--weight-bold);
+}
+
+.job-content {
+    font-family: var(--font-sans);
+    font-size: var(--size-16);
+    color: var(--color-black);
+    opacity: 0.7;
+}
+
+.job-categories {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 330px));
+    grid-gap: 40px;
+    margin-top: 100px;
+}
+
+.section-whowehire {
+    background: #FFE4ED;
+    padding: 64px;
+}
+
+.section-chooake {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(345px, 1fr));
+    grid-template-rows: auto;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.mission-title-small {
+    font-size: var(--size-14);
+    color: var(--color-red);
+    margin-bottom: 1em;
+    font-family: var(--font-sans);
+
+}
+
+.mission-title {
+    font-size: var(--size-40);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    font-family: var(--font-serif);
+    margin-bottom: 1em;
+}
+
+.mission-content {
+    font-size: var(--size-18);
+    font-family: var(--font-sans);
+    color: var(--color-black);
+    margin-bottom: 2em;
+}
+
+.open-roles {
+    font-family: var(--font-serif);
+    font-size: var(--size-48);
+    color: var(--color-black);
+    line-height: 1.2;
+    font-weight: var(--weight-bold);
+    margin-bottom: 1em;
+}
+
+.email {
+    font-family: var(--font-serif);
+    color: var(--color-red);
+    font-weight: var(--weight-bold);
+}
+
+/*************?--End of CAREERS.html--***************/
+
 
 /************** Section 4 - Articles ***************/
 
