@@ -568,11 +568,12 @@ a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    width: 1320px;
+    width: 83.5%;
     margin: 0 auto;
     grid-gap: 33px;
     margin-top: -50px;
 }
+
 
 .hh-3 {
     align-self: end;
@@ -580,7 +581,9 @@ a:visited {
 
 .hh-2 {
     margin-left: -228px;
+    
 }
+
 
 .section-3-ceo {
     display: grid;
@@ -701,6 +704,76 @@ a:visited {
 }
 
 /*************?--End of CAREERS.html--***************/
+
+
+
+
+
+
+/*************?--JOBS.html--***************/
+
+.back-button {
+    display: inline-block;
+    height: 40px;
+    width: 108px;
+    border-radius: 4px;
+    font-family: var(--font-sans);
+    font-size: var(--size-18);
+    border: 1px solid #d8d8d8;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.back-button:hover,
+.back-button:focus {
+    border: 1px solid #2b2b2b;
+}
+
+
+.back-button:active {
+    transform: scale(0.99);
+    color: #2b2b2b;
+}
+
+.main-job-container {
+    max-width: 800px;
+    min-width: 345px;
+}
+
+.job-heading {
+    font-family: var(--font-serif);
+    font-size: var(--size-48);
+    color: var(--color-black);
+    margin-bottom: 1em;
+}
+
+.role-desc {
+    font-family: var(--font-sans);
+    color: var(--color-black);
+    font-size: var(--size-24);
+    margin-bottom: 1em;
+}
+
+.role-content {
+    font-family: var(--font-sans);
+    font-size: var(--size-22);
+    color: #454F57;
+}
+
+
+
+
+
+
+
+
+/*************?--End of JOBS.html--***************/
+
+
+
+
+
 
 
 /************** Section 4 - Articles ***************/
@@ -844,7 +917,7 @@ a:visited {
 /************** Testimonial ***************/
 
 
-.testimonial-slider {
+/* .testimonial-slider {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 32px;
@@ -853,7 +926,7 @@ a:visited {
     height: 523px;
     position: relative;
 
-}
+} */
 
 .testimonial {
     font-size: var(--size-24);
@@ -863,6 +936,24 @@ a:visited {
     line-height: 1.5;
     width: 70%;
     /* margin: 0 auto; */
+}
+
+.testimonial-slider {
+    display: flex;
+    flex-direction: column;
+    background: #FEF4F1;
+    padding: 100px;
+    background: #FFE4ED;
+    height: 400px;
+}
+
+.testimonial-main {
+    font-size: var(--size-40);
+    font-family: var(--font-serif);
+    color: var(--color-black);
+    width: 70%;
+    
+
 }
 
 .name {
