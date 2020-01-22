@@ -1144,7 +1144,7 @@ aside > p {
         .section-2, .section-3, .section-6 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-rows: auto;
         }
         .section-headline {
             font-size: var(--size-32);
@@ -1152,8 +1152,10 @@ aside > p {
             grid-column: 1 / span 2;
         }
         .section-desc {
-            font-size: var(--size-20);
+            font-size: var(--size-18);
             grid-column: 1 / span 2;
+            width: 93vw;
+            margin-top: -24px;
         }
         .links {
             grid-column: 1;
@@ -1165,6 +1167,10 @@ aside > p {
             margin-top: -100px;
         }
 
+        .section-7 {
+            margin-top: -64px;
+        }
+
     }   
 
 
@@ -1174,11 +1180,13 @@ aside > p {
 @media screen
     and (max-device-width: 375px)
      {
-        .container {
+
+        .transition-fade {
             display: grid;
             grid-template-columns: 1fr;
             width: 93vw;
             overflow: hidden;
+            grid-row-gap: 6em;
         }
         .page-headline {
             font-size: 48px;
@@ -1186,9 +1194,8 @@ aside > p {
         }
         .hero-image {
             width: 100%;
-            height: 100%;
-            margin-top: 48px;
-            object-fit: contain;
+            margin-top: 16px;
+            object-fit: cover;
         }
 
         .article-img-container {
