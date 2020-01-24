@@ -1215,7 +1215,7 @@ aside > p {
         }
         .section-headline {
             font-size: var(--size-32);
-            font-weight: var(--weight-reg);
+            font-weight: var(--weight-bold);
             grid-column: 1 / span 2;
             color: var(--color-black);
         }
@@ -1223,8 +1223,7 @@ aside > p {
             font-size: var(--size-18);
             color: #454F57;
             grid-column: 1 / span 2;
-            /* width: 90vw; */
-            margin-top: -40px;
+            margin-top: -32px;
         }
         .links {
             grid-column: 1;
@@ -1312,7 +1311,7 @@ aside > p {
         }
 
         .article {
-            width: 300px;
+            width: 320px;
             justify-self: center;
         }
 
@@ -1347,6 +1346,7 @@ aside > p {
             display: flex;
             flex-direction: column;
             margin-top: -100px;
+            justify-content: space-around;
         }
 
         .people-image img {
