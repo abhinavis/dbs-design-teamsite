@@ -181,13 +181,12 @@ a:visited {
     justify-content: space-around;
 }
 
-.image-container-half {
+/* .image-container-half {
     display: flex;
-    /* width: 100%; */
     height: 850px;
     background: #F5F7F9;
     justify-content: space-around;
-}
+} */
 
 
 
@@ -401,6 +400,22 @@ a:visited {
 
 .section-3-peek {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left-side .section-desc {
+    margin-top: -120px;
+    width: 85%;
+}
+
+/* .section-3-peek {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 48px;
 }
@@ -410,14 +425,14 @@ a:visited {
     grid-template-rows: 60px 330px 139px;
     grid-row-gap: 16px;
     padding-top: 64px;
-}
+} */
 
-.section-2-everyday {
+/* .section-2-everyday {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 2.5em;
-}
+} */
 
 
 
@@ -433,6 +448,7 @@ a:visited {
     grid-template-rows: 1fr;
     grid-column-gap: 1em;
     margin-top: 120px;
+    /* background: #F5F7F9; */
 }
 
 .principle-title {
@@ -446,7 +462,7 @@ a:visited {
 .why-title, .outcome-title {
     font-size: var(--size-18);
     font-family: var(--font-sans);
-    color: var(--color-grey);
+    color: #A288A5;
     font-weight: 500;
 }
 
@@ -849,13 +865,6 @@ aside > p {
     margin-top: 40px;
     cursor: pointer;
 
-    /* box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-    0 2px 4px rgba(0,0,0,0.07), 
-    0 2px 4px rgba(0,0,0,0.07), 
-    0 2px 4px rgba(0,0,0,0.07),
-    0 4px 8px rgba(0,0,0,0.07), 
-    0 8px 16px rgba(0,0,0,0.07); */
-
 }
 
 .apply-button:hover {
@@ -931,7 +940,6 @@ aside > p {
 
 .article {
     width: 400px;
-    /* height: 600px; */
 }
 
 .article-title {
@@ -997,9 +1005,6 @@ aside > p {
     display: grid;
     padding: 40px;
     background: rgba(245,247,249,0.50);
-    /* padding-left: 48px;
-    padding-right: 48px; */
-    /* transition: all 100ms ease; */
     grid-template-columns: 4fr 1fr;
     border-bottom: 1px solid #F5F7F9;
 
@@ -1023,21 +1028,18 @@ aside > p {
 
 .job-container:hover {
     background: #172633;
-    /* transform: scale(1.01); */
     border-radius: 2px;
     
 }
 
 .job-container:hover > .job-desc .job-title {
     color: white;
-    /* transition: all 100ms; */
     
 }
 
 .job-container:hover > .job-desc .job-sub-title {
     color: white;
     opacity: 0.8;
-    /* transition: all 100ms; */
 }
 
 .arrow {
@@ -1054,18 +1056,6 @@ aside > p {
 
 /************** Testimonial ***************/
 
-
-/* .testimonial-slider {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 32px;
-    margin: 0 auto;
-    background: #FCE4FF;
-    height: 523px;
-    position: relative;
-
-} */
-
 .testimonial {
     font-size: var(--size-24);
     font-family: var(--font-serif);
@@ -1079,7 +1069,7 @@ aside > p {
 .testimonial-slider {
     display: flex;
     flex-direction: column;
-    background: white;
+    /* background: white; */
     padding-bottom: 4em;
     justify-self: center;
 }
@@ -1120,7 +1110,6 @@ aside > p {
     color: var(--color-red);
     font-family: var(--font-sans);
     font-weight: 500;
-    /* text-align: center; */
 }
 
 .desig {
@@ -1129,7 +1118,6 @@ aside > p {
     color: #8a8a8a;
     font-family: var(--font-sans);
     margin-top: -4px;
-    /* text-align: center; */
 }
 
 .testimonial-container {
@@ -1151,7 +1139,6 @@ aside > p {
 
 .footer {
     background: white;
-    /* width: 100vw; */
     margin-top: 120px;
     border-top: 1px solid rgb(236, 236, 236);
 }
@@ -1159,7 +1146,6 @@ aside > p {
 .footer-width {
     width: 90%;
     margin: 0 auto;
-    /* padding-top: 70px; */
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     margin-top: 80px;
@@ -1227,9 +1213,10 @@ aside > p {
         }
         .section-desc {
             font-size: var(--size-18);
-            color: #454F57;
+            color: #59646D;
             grid-column: 1 / span 2;
             margin-top: -40px;
+            line-height: 1.6;
         }
         .links {
             grid-column: 1;
@@ -1254,7 +1241,6 @@ aside > p {
             flex-direction: column;
             height: 110%;
             margin: 0 auto;
-            /* flex-direction: column; */
         }
 
         .phone-image img {
@@ -1291,7 +1277,7 @@ aside > p {
             grid-template-columns: 1fr;
             width: 90vw;
             margin: 0 auto;
-            grid-row-gap: 6em;
+            grid-row-gap: 7em;
         }
         .page-headline {
             font-size: 48px;
@@ -1383,19 +1369,27 @@ aside > p {
 
     @media screen
     and (max-device-width: 375px) {
+
         .section-3-peek {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: auto;
             grid-row-gap: 2em;
         }
 
-        .section-2-everyday {
+        .left-side .section-desc {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+
+
+        /* .section-2-everyday {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-row-gap: 3em;
-        }
+        } */
 
 
 
@@ -1406,21 +1400,22 @@ aside > p {
         }
 
         .principle-1, .principle-2, .principle-3, .principle-4, .principle-5 {
-            background: #F5F7F9;
+            background: #fff;
             width: 100%;
             margin: 0 auto;
-            padding: 24px;
+            padding: 32px;
             margin-bottom: 24px;
             border-radius: 4px;
-            -webkit-box-shadow: -2px 7px 30px 0px rgba(194,194,194,0.23);
-            -moz-box-shadow: -2px 7px 30px 0px rgba(194,194,194,0.23);
-            box-shadow: -2px 7px 30px 0px rgba(194,194,194,0.23);
+            box-shadow:
+            0 2.8px 2.2px rgba(165, 165, 165, 0.034),
+            0 6.7px 5.3px rgba(165, 165, 165, 0.048),
+            0 12.5px 10px rgba(165, 165, 165, 0.06),
+            0 22.3px 17.9px rgba(165, 165, 165, 0.072),
+            0 41.8px 33.4px rgba(165, 165, 165, 0.086),
+            0 100px 80px rgba(165, 165, 165, 0.12)
+          ;
 
         }
-
-        /* section {
-            width: 320px;
-        } */
 
         .ipad-image img {
             width: 300px;
@@ -1434,7 +1429,13 @@ aside > p {
 
         .footnote {
             width: 320px;
-            margin-top: 140px;
+            margin-top: 144px;
         }
+
+        .testimonial-container {
+            width: 90%;
+        }
+
+        .
 
     }
