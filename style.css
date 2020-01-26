@@ -390,8 +390,8 @@ a:visited {
 }
 
 .people-image img {
-    width: 350px;
-    height: 100%;
+    max-width: 350px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -978,7 +978,7 @@ aside > p {
 }
 
 .article {
-    max-width: 400px;
+    max-width: 345px;
     min-width: 300px;
     height: auto;
     object-fit: contain;
@@ -998,7 +998,7 @@ aside > p {
     height: auto;
     margin-bottom: 1em;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
