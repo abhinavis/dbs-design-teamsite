@@ -972,7 +972,7 @@ aside > p {
 }
 
 .article {
-    width: 80%;
+    width: 400px;
 }
 
 .article-title {
@@ -1504,6 +1504,20 @@ aside > p {
         .article-section {
             display: grid;
             grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen
+    and (max-device-width: 768px) {
+        /* .article-section {
+            width: 90%;
+        } */
+
+        .article {
+            width: 300px;
+        }
+        .article-img {
+            height: 95%;
         }
     }
 
