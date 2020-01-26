@@ -1540,8 +1540,16 @@ aside > p {
 
 
 
-    @media screen
+    @media only screen
     and (max-device-width: 768px) {
+
+        .transition-fade {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 90vw;
+            margin: 0 auto;
+            grid-row-gap: 10em;
+        }
 
         .article {
             width: 300px;
