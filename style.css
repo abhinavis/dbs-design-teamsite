@@ -130,7 +130,7 @@ a:visited {
 .page-headline {
     font-family: var(--font-serif);
     font-size: calc(100px + 56 * ((100vw - 320px) / (2280)));
-    line-height: 1.12;
+    line-height: 1.1;
     color: var(--color-black);
     font-weight: var(--weight-bold);
        
@@ -181,16 +181,6 @@ a:visited {
     /* background: #FCE4FF; */
     justify-content: space-around;
 }
-
-/* .image-container-half {
-    display: flex;
-    height: 850px;
-    background: #F5F7F9;
-    justify-content: space-around;
-} */
-
-
-
 
 .headline {
     margin-top: 100px;
@@ -297,14 +287,15 @@ a:visited {
 
 
 .hero-image img {
-    width: 800px;
-    height: 464px;
+    width: 100%;
+    height: auto;
     justify-self: end;
     object-fit: contain;
 }
 
 .hero-image {
     justify-self: end;
+    margin-top: 3em;
 }
 
 
@@ -328,91 +319,16 @@ a:visited {
 /************** Section 3 - One Band, One Sound ***************/
 
 
-/* .image-scroll {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    overflow-x: scroll;
-    grid-row-gap: auto;
-    grid-column-gap: 4em;
-    grid-column: 1 / span 2;
-    margin-top: 24px;
-    align-content: center;
-    align-items: center;
-
-}
-
-.image-scroll::-webkit-scrollbar {
-    display: none;
-    overflow: -moz-scrollbars-none;
-} */
-
-/* .people-1 {
-    width: 417px;
-    height: 288px;
-
-}
-
-.people-2 {
-    width: 437px;
-    height: 340px;
-
-    
-}
-.people-3 {
-    width: 400px;
-    height: 300px;
-
-    
-}
-
-.people-4 {
-    width: 350;
-    height: 467px;
-    
-
-}
-
-.people-5 {
-    widows: 310px;
-    height: 410px;
-
-} */
 
 
-.section-home-people-image {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 100px;
-    justify-items: center;
-    align-items: center;
-    margin-top: -200px;
-}
-
-.people-image img {
-    max-width: 350px;
+.home-image img {
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
-
-.people-image video {
-    width: 370px;
+.home-image {
+    grid-column: 1 / span 2;
 }
-
-.section-home-people-image :nth-child(1) {
-    justify-self: start;
-}
-.section-home-people-image :nth-child(4) {
-    justify-self: start;
-}
-.section-home-people-image :nth-child(3) {
-    justify-self: end;
-}
-.section-home-people-image :nth-child(6) {
-    justify-self: end;
-}
-
-
 
 
 
@@ -1126,6 +1042,7 @@ aside > p {
     align-self: center;
     margin-bottom: 0.5em;
     line-height: 1.35;
+    margin-top: -20px;
 }
 
 .t-name-role {
@@ -1373,20 +1290,6 @@ aside > p {
         .address-section {
             flex-direction: column;
             grid-column: 1 / span 2;
-        }
-
-        .section-home-people-image {
-            display: flex;
-            flex-direction: column;
-            margin-top: -100px;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        .people-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
         }
 
         .people-image video {
