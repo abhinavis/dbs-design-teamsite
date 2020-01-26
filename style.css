@@ -1540,7 +1540,7 @@ aside > p {
 
 
 
-    @media only screen
+    @media screen
     and (max-device-width: 767px) {
 
         .transition-fade {
