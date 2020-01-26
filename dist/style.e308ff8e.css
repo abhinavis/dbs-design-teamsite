@@ -1541,7 +1541,7 @@ aside > p {
 
 
     @media screen
-    and (min-device-width: 768px) {
+    and (max-device-width: 768px) {
 
         .article {
             width: 300px;
@@ -1564,13 +1564,13 @@ aside > p {
         .section-headline {
             font-family: var(--font-serif);
             color: var(--color-black);
-            font-size: var(--size-32);
+            font-size: 32px;
         }
 
         .section-desc {
             font-family: var(--font-sans);
             color: var(--color-black);
-            font-size: var(--size-18);
+            font-size: 18px;
         }
 
         .section-3-peek {
@@ -1627,7 +1627,7 @@ aside > p {
         }
 
         .principle-title {
-            font-size: var(--size-24);
+            font-size: 24px;
 
         }
 
