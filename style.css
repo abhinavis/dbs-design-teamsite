@@ -79,22 +79,37 @@ a:visited {
     margin: 0 auto;
 }
 
-.menu-item {
-    float: left;
+.menu {
+    display: flex;
+    list-style: none;
+    font-family: var(--font-sans);
+    font-size: var(--size-18);
+}
+
+/* .menu-item {
     padding-left: 24px;
     font-family: var(--font-sans);
     font-size: var(--size-18);
     color: var(--color-black);
-}
+    justify-content: space-around;
+} */
 
 .menu li {
     list-style: none;
+    text-decoration: none;
+    padding-left: 24px;
     
+}
+.menu li:visited {
+    color: var(--color-black);
+    text-decoration: none;
+    text-emphasis: none;
 }
 
 .menu {
     justify-self: end;
     align-self: center;
+    justify-content: space-around;
 }
 
 .logo {
@@ -394,6 +409,7 @@ a:visited {
     color: var(--color-black);
     font-weight: var(--weight-bold);
     padding-bottom: 24px;
+    max-width: 234px;
 }
 
 .why-title, .outcome-title {
@@ -1158,7 +1174,7 @@ aside > p {
 
 
 @media screen
-    and (max-device-width: 375px)
+    and (max-width: 375px)
      {
         .section-2, .section-3, .section-6 {
             display: grid;
@@ -1556,3 +1572,66 @@ aside > p {
 
         
     } */
+
+    @media screen and (max-width: 768px) {
+        .navigation {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 7fr;
+            position: fixed;
+            background: #ff3e3e;
+            width: 100%;
+            height: 100vh;
+            /* z-index: 1000; */
+            justify-items: center;
+            /* position: relative; */
+            clip-path: circle(100px at 90% -13%);
+            -webkit-clip-path: circle(100px at 90% -10%); 
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+
+        .navigation.open {
+            clip-path: circle(1000px at 90% -13%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            transition: all 1s ease-out;
+        }
+
+        .menu {
+            flex-direction: column;
+            justify-self: start;
+            font-family: var(--font-serif);
+            font-size: 64px;
+            font-weight: var(--weight-bold);
+            color: var(--color-black);
+            justify-content: space-around;
+            /* display: none; */
+            
+        }
+
+        .menu li {
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            justify-self: start;
+            margin-left: 12px;
+
+        }
+
+        .line {
+            width: 30px;
+            height: 2px;
+            background: #172633;
+            margin: 5px;
+        }
+
+        .hamburger {
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 5%;
+
+            
+        }
+    }

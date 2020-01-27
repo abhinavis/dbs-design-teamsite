@@ -7,3 +7,14 @@ $(window).load(function(){
       }, 1);
     }
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navigation = documnet.querySelector('.navigation');
+const menu = document.querySelectorAll('.menu li');
+
+hamburger.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
