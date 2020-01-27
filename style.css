@@ -138,7 +138,7 @@ a:visited {
 
 .section-headline {
     font-family: var(--font-serif);
-    font-size: calc(20px + 1vw);
+    font-size: calc(22px + 1vw);
     color: var(--color-black);
     line-height: 1.2;
     font-weight: var(--weight-bold);
@@ -1034,7 +1034,7 @@ aside > p {
 }
 
 .testimonial-main {
-    font-size: 64px;
+    font-size: calc(56px + 1vw);
     font-family: var(--font-serif);
     color: #172633;
     text-align: center;
