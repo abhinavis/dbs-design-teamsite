@@ -16,6 +16,10 @@ html, body {
 
 }
 
+/* body {
+    overflow: hidden;
+} */
+
 /***************** GLOBAL - Variables, Keyframes & Scroll JS  *****************/
 
 :root {
@@ -70,107 +74,59 @@ a:visited {
 
 
 /************** Navigation ***************/
-
-.navigation {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 90vw;
-    height: 100px;
-    margin: 0 auto;
-}
-
-/* .menu-item {
-    float: left;
-    padding-left: 24px;
-    font-family: var(--font-sans);
-    font-size: var(--size-18);
-    color: var(--color-black);
-} */
-
-/* .menu li {
-    list-style: none;
-    
-}
-
-.menu {
-    justify-self: end;
-    align-self: center;
-}
-
-.logo {
-    align-self: center;
-} */
-
-nav {
-    height: 12.5vh;
+nav{
+    height: 6rem;
     width: 90vw;
     margin: 0 auto;
-    background: #fff;
+    background-color: white;
     display: flex;
     z-index: 10;
 }
 
-.nav-links {
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    align-self: center;
+}
+/* .logo img {
+    height: 5rem;
+    width: 5rem;
+} */
+
+/*Styling Links*/
+.nav-links{
     display: flex;
-    list-style: none;
-    align-items: center;
+    list-style: none; 
+    width: 90vw;
     justify-content: flex-end;
-    font-family: var(--font-sans);
-    font-size: var(--size-18);
-    width: 100%;
-    /* padding: 0 0.7vw; */
-    /* margin-left: 32px; */
-
+    align-items: center;
+    font-family: "neue-haas-unica";
+    font-size: 18px;
 }
-
-.nav-links li a {
+.nav-links li a{
     text-decoration: none;
-    /* margin: 0 0.7vw; */
-    align-self: flex-end;
-    margin-left: 24px;
-    }
-    .nav-links li a:hover {
-    color: #2b2b2b;
-    }
-    .nav-links li {
+    text-emphasis: none;
+    padding-left: 24px;
+}
+.nav-links li a:hover {
+    color: #8a8a8a;
+    transition: all 0.3s ease;
+
+}
+.nav-links li {
     position: relative;
-    }
-    .nav-links li a::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 0%;
-    background-color: #8a8a8a;
-    position: absolute;
-    transition: all ease 500ms;
-    margin: 0 0 0 10%;
-    bottom: -20%;
-    left: 12%;
-
-    }
-
-.nav-links li a:hover::before {
-    width: 80%;
 }
 
-.hamburger div {
+.hamburger div{
     width: 30px;
     height:3px;
-    background: #ff3e3e;
+    background: #f2f5f7;
     margin: 5px;
     transition: all 0.3s ease;
 }
-
-.hamburger {
+.hamburger{
     display: none;
 }
-
-.logo {
-    align-self: center;
-}
-
-
-
 
 
 
@@ -202,7 +158,8 @@ nav {
 
 .page-headline {
     font-family: var(--font-serif);
-    font-size: calc(100px + 56 * ((100vw - 320px) / (2280)));
+    /* font-size: calc(100px + 56 * ((100vw - 320px) / (2280))); */
+    font-size: calc(100px + 1vw);
     line-height: 1.1;
     color: var(--color-black);
     font-weight: var(--weight-bold);
@@ -914,6 +871,7 @@ aside > p {
     margin-bottom: 1em;
     font-family: var(--font-sans);
     font-size: var(--size-18);
+    padding: 0px 10px;
 }
 
 .message-field {
@@ -1521,14 +1479,14 @@ aside > p {
     }
 
 
-    @media screen and (max-width: 800px) {
-        nav {
-        position: fixed;
-        z-index: 30;
-        /* margin: 0 auto; */
-        }
 
-        .hamburger {
+    @media screen and (max-width: 800px){
+        nav{
+            position: fixed;
+            z-index: 3;
+            width: 100vw;
+        }
+        .hamburger{
             display:block;
             position: absolute;
             cursor: pointer;
@@ -1537,44 +1495,54 @@ aside > p {
             transform: translate(-5%, -50%);
             z-index: 2;
             transition: all 0.7s ease;
-            color: #172633;
-            }
-
-        nav-links {
+        }
+        .nav-links{
             position: fixed;
-            background: #131418;
+            background: #ff3e3e;
             height: 100vh;
             width: 100%;
             flex-direction: column;
             clip-path: circle(50px at 90% -20%);
             -webkit-clip-path: circle(50px at 90% -10%);
-            transition: all 1s ease-out;
+            transition: all 1s ease;
             pointer-events: none;
+            font-size: calc(48px + 4vw);
+            justify-content: center;
+            align-items: start;
+    
         }
-                
-        .nav-links.open {
-            clip-path: circle(1000px at 90% -10%);
-            -webkit-clip-path: circle(1000px at 90% -10%);
+        .nav-links.open{
+            clip-path: circle(2000px at 90% -10%);
+            -webkit-clip-path: circle(2000px at 90% -10%);
             pointer-events: all;
         }
-
-        .nav-links li {
+        .nav-links li{
             opacity: 0;
+            padding-left: 20px;
+            margin-bottom: 20px;
         }
-        
-        .nav-links li:nth-child(1) {
-            transition: all 0.5s ease 0.2s;
+    
+        .logo {
+            margin-left: 4%;
         }
-        
-        .nav-links li:nth-child(2) {
-            transition: all 0.5s ease 0.4s;
+        .nav-links li a {
+            color: white;
+            font-family: "big-caslon-fb";
+    
         }
-
-        .nav-links li:nth-child(3) {
-            transition: all 0.5s ease 0.6s;
+        .nav-links li:nth-child(1){
+            transition: all 0.5s ease-in 0.3s;
+        }
+        .nav-links li:nth-child(2){
+            transition: all 0.5s ease-in 0.5s;
+        }
+        .nav-links li:nth-child(3){
+            transition: all 0.5s ease-in 0.7s;
+        }
+        li.fade{
+            opacity: 1;
         }
     }
-
 
     /* @media screen
     and (max-device-width: 767px) {
@@ -1685,37 +1653,6 @@ aside > p {
         
     } */
 
-    /* @media screen and (max-width: 768px) {
-        .line {
-            width: 30px;
-            height: 2px;
-            background: #172633;
-            margin: 5px;
-        }
-
-        .navigation {
-            position: relative;
-        }
-
-        .menu {
-            position: relative;
-        }
-
-        .hamburger {
-            position: absolute;
-            top: 40%;
-            right: -1%;
-            z-index: 2;
-        }
-
-        .menu {
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            font-size: 48px;
-            font-family: var(--font-serif);
-        }
-
-    } */
+    
 
     
