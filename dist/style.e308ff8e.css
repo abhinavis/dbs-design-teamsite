@@ -85,13 +85,8 @@ nav{
 
 /*Styling logo*/
 .logo{
-    padding:1vh 1vw;
     align-self: center;
 }
-/* .logo img {
-    height: 5rem;
-    width: 5rem;
-} */
 
 /*Styling Links*/
 .nav-links{
@@ -100,10 +95,11 @@ nav{
     width: 90vw;
     justify-content: flex-end;
     align-items: center;
-    font-family: "neue-haas-unica";
+    font-family: var(--font-sans);
     font-size: 18px;
+    color: var(--color-black);
 }
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     text-emphasis: none;
     padding-left: 24px;
@@ -298,11 +294,11 @@ nav{
     color: var(--color-black);
 }
 
-.footer-links a {
+.footer-links li a {
     text-decoration: none;
 }
 
-.footer-links a:visited {
+.footer-links li a:visited {
     text-emphasis: none;
     text-decoration: none;
     color: var(--color-black);
@@ -1183,7 +1179,7 @@ aside > p {
 
 
 .footer-links a:hover {
-    border-bottom: 1px solid #ff3e3e;
+    color: #8a8a8a;
 }
 
 /************** Media Queries ***************/
