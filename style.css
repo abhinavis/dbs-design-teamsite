@@ -155,7 +155,7 @@ nav{
 .page-headline {
     font-family: var(--font-serif);
     /* font-size: calc(100px + 56 * ((100vw - 320px) / (2280))); */
-    font-size: calc(100px + 1vw);
+    font-size: calc(100px + 3vw);
     line-height: 1.1;
     color: var(--color-black);
     font-weight: var(--weight-bold);
@@ -587,7 +587,7 @@ nav{
 }
 
 .team-image {
-    margin-top: -250px;
+    margin-top: -150px;
 }
 
 /*************?--End of PEOPLE.html--***************/
@@ -922,9 +922,9 @@ aside > p {
 }
 
 .article {
-    max-width: 345px;
-    min-width: 300px;
-    height: auto;
+    max-width: 450px;
+    min-width: 200px;
+    /* height: auto; */
     object-fit: contain;
 }
 
@@ -933,6 +933,7 @@ aside > p {
     font-family: var(--font-sans);
     line-height: 1.6;
     margin-bottom: 3em;
+    width: 90%;
 
 }
 
@@ -985,16 +986,22 @@ aside > p {
 /************** Section 7 - Job Section ***************/
 
 .section-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: -200px;
+    grid-column-gap: 4em;
 }
 
 .job-container {
     display: grid;
-    padding: 39px;
-    background: rgba(245,247,249,0.50);
+    /* background: rgba(245,247,249,0.50); */
     grid-template-columns: 4fr 1fr;
     border-bottom: 1px solid #F5F7F9;
 
+}
+
+.job-desc {
+    padding: 39px;
 }
 
 .job-title {
@@ -1003,41 +1010,55 @@ aside > p {
     color: var(--color-black);
     margin-bottom: 2px;
     font-weight: 500;
-    
+    transform: translateX(-39px);
     
 }
+
+
 
 .job-sub-title {
     font-family: var(--font-sans);
     font-size: var(--size-16);
     color: #8a8a8a;
+    transform: translateX(-39px);
 }
 
 .job-container:hover {
-    background: #172633;
+    background: #0077CC;
     border-radius: 2px;
     
 }
 
 .job-container:hover > .job-desc .job-title {
     color: white;
+    transform: translateX(0);
+    transition: all ease 0.2s;
     
 }
 
 .job-container:hover > .job-desc .job-sub-title {
     color: white;
     opacity: 0.8;
+    transform: translateX(0);
+    transition: all ease 0.3s;
+    
 }
+
+/* .job-container:hover > .job-desc .job-sub-title {
+    color: white;
+    opacity: 0.8;
+} */
 
 .arrow {
     justify-self: end;
     align-self: center;
+    padding-right: 39px;
     transform: translateX(-20px);  
 }
 
 .job-container:hover > .arrow {
     transform: translateX(0);
-    transition: all 300ms ease;
+    transition: all 300ms ease-out;
 }
 
 
@@ -1337,6 +1358,11 @@ aside > p {
             margin-bottom: 3em;
         }
 
+        .section-7 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
     }
 
 
@@ -1487,7 +1513,7 @@ aside > p {
             position: absolute;
             cursor: pointer;
             right: 5%;
-            top: 50%;
+            top: 47%;
             transform: translate(-5%, -50%);
             z-index: 2;
             transition: all 0.7s ease;
