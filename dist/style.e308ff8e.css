@@ -59,6 +59,24 @@ html, body {
 
 /************** On Scroll Animation ***************/
 
+[data-scroll] {
+    transition: all ease 1s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+
+
+
+
 
 
 a {
@@ -116,7 +134,7 @@ nav{
 .hamburger div{
     width: 30px;
     height:3px;
-    background: #f2f5f7;
+    background: #C7CFD5;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -204,20 +222,17 @@ nav{
     height: 850px;
     background: #F5F7F9; 
     grid-column: 1 / span 2;
-    /* background: #FCE4FF; */
     justify-content: space-around;
 }
 
 .headline {
     margin-top: 100px;
-    /* margin-bottom: 64px; */
 }
 
 .footnote {
     font-family: var(--font-sans);
     font-size: var(--size-16);
     color: var(--color-grey);
-    /* margin-top: -40px; */
     grid-column: 1 / span 2;
     text-align: center;
     margin-top: 1em;
@@ -255,15 +270,26 @@ nav{
     height: 773px;
 }
 
-.canopy-image {
-    display: flex;
-    align-self: center;
+.canopy img {
+    width: 100%;
+    object-fit: contain;
 }
 
-.canopy-image img {
-    width: 1000px;
-    height: 850px;
+.canopy {
+    grid-column: 1 / span 2;
 }
+
+.rotary {
+    position: relative;
+    z-index: 10;
+}
+
+.rotary-icon {
+    position: absolute;
+    top: 84px;
+}
+
+
 
 .travel-mode-modal {
     align-self: center;
@@ -377,31 +403,6 @@ nav{
     width: 85%;
 }
 
-/* .section-3-peek {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-column-gap: 48px;
-}
-
-.left-section {
-    display: grid;
-    grid-template-rows: 60px 330px 139px;
-    grid-row-gap: 16px;
-    padding-top: 64px;
-} */
-
-/* .section-2-everyday {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 2.5em;
-} */
-
-
-
-/* .testimonial-container {
-    grid-row: 3 / -1;
-} */
 
 /************** Design Principles ***************/
 
@@ -411,7 +412,6 @@ nav{
     grid-template-rows: 1fr;
     grid-column-gap: 1em;
     margin-top: 120px;
-    /* background: #F5F7F9; */
 }
 
 .principle-title {
@@ -553,30 +553,6 @@ nav{
 
 /************** Section-4 - Team Pictures ***************/
 
-/* .team-pictures {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 64px;
-    grid-row-gap: 100px;
-    margin: 0 auto;
-    width: 100%;
-    margin-top: -200px;
-}
-
-.dept-img {
-    max-width: 100%;
-    min-width: 345px;
-    height: 450px;
-    background: #FFE4ED;
-}
-
-.dept-name {
-    font-family: var(--font-serif);
-    font-size: var(--size-32);
-    color: var(--color-black);
-    padding-top: 16px;
-} */
 
 .section-allofus {
     position: relative;
@@ -596,31 +572,6 @@ nav{
 
 /*************?CAREERS.html--***************/
 
-/* .section-2-hh {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-}
-
-.hh-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    width: 83.5%;
-    margin: 0 auto;
-    grid-gap: 33px;
-    margin-top: -50px;
-}
-
-
-.hh-3 {
-    align-self: end;
-}
-
-.hh-2 {
-    margin-left: -228px;
-    
-} */
 
 .hh-image img {
     width: 100%;
@@ -707,13 +658,11 @@ nav{
     padding: 64px;
 }
 
-.section-chooake {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(345px, 1fr));
-    grid-template-rows: auto;
-    width: 1320px;
-    margin: 0 auto;
+.chooake-pic img {
+    width: 75%;
+    object-fit: contain;
 }
+
 
 .mission-title-small {
     font-size: var(--size-14);
@@ -732,9 +681,9 @@ nav{
 }
 
 .mission-content {
-    font-size: var(--size-18);
+    font-size: var(--size-20);
     font-family: var(--font-sans);
-    color: var(--color-black);
+    color: #454F57;
     margin-bottom: 2em;
 }
 
@@ -924,7 +873,6 @@ aside > p {
 .article {
     max-width: 450px;
     min-width: 200px;
-    /* height: auto; */
     object-fit: contain;
 }
 
@@ -938,7 +886,6 @@ aside > p {
 }
 
 .article-img {
-    /* max-width: 345px; */
     min-width: 250px;
     height: auto;
     margin-bottom: 1em;
@@ -994,7 +941,6 @@ aside > p {
 
 .job-container {
     display: grid;
-    /* background: rgba(245,247,249,0.50); */
     grid-template-columns: 4fr 1fr;
     border-bottom: 1px solid #F5F7F9;
 
@@ -1043,11 +989,6 @@ aside > p {
     transition: all ease 0.3s;
     
 }
-
-/* .job-container:hover > .job-desc .job-sub-title {
-    color: white;
-    opacity: 0.8;
-} */
 
 .arrow {
     justify-self: end;
@@ -1202,6 +1143,42 @@ aside > p {
 .footer-links a:hover {
     color: #8a8a8a;
 }
+
+@-webkit-keyframes rotary-icon /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotary-icon {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotary-icon {
+    -webkit-animation: rotary-icon 50s linear infinite;
+    -moz-animation: rotary-icon 50s linear infinite;
+    -ms-animation: rotary-icon 50s linear infinite;
+    -o-animation: rotary-icon 50s linear infinite;
+    animation: rotary-icon 50s linear infinite;
+  }
 
 /************** Media Queries ***************/
 
@@ -1361,7 +1338,34 @@ aside > p {
         .section-7 {
             display: grid;
             grid-template-columns: 1fr;
+            width: 100%;
         }
+
+        .job-desc {
+            padding-left: 16px;
+        }
+
+        .job-title {
+            transform: translateX(0);
+            width: 100%;
+        }
+
+        .job-sub-title {
+            transform: translateX(0);
+        }
+
+        .team-image {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .team-image img {
+            width: 160%;
+            /* position: absolute; */
+            margin-left: -30%;
+        }
+
+        
 
     }
 
@@ -1382,16 +1386,6 @@ aside > p {
             margin-bottom: 20px;
             width: 100%;
         }
-
-
-
-        /* .section-2-everyday {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-row-gap: 3em;
-        } */
-
 
 
 
@@ -1428,6 +1422,7 @@ aside > p {
             height: 100%;
         }
 
+
         .footnote {
             width: 320px;
             margin-top: 144px;
@@ -1435,6 +1430,10 @@ aside > p {
 
         .testimonial-container {
             width: 90%;
+        }
+
+        .rotary {
+            display: none;
         }
     }
 
@@ -1526,9 +1525,9 @@ aside > p {
             flex-direction: column;
             clip-path: circle(50px at 90% -20%);
             -webkit-clip-path: circle(50px at 90% -10%);
-            transition: all 1s ease;
+            transition: all 0.5s ease-out;
             pointer-events: none;
-            font-size: calc(48px + 4vw);
+            font-size: calc(40px + 4vw);
             justify-content: center;
             align-items: start;
     
@@ -1542,6 +1541,7 @@ aside > p {
             opacity: 0;
             padding-left: 20px;
             margin-bottom: 20px;
+
         }
     
         .logo {
@@ -1550,16 +1550,21 @@ aside > p {
         .nav-links li a {
             color: white;
             font-family: "big-caslon-fb";
+            
     
         }
         .nav-links li:nth-child(1){
             transition: all 0.5s ease-in 0.3s;
+            transform: translateY(0);
+        
         }
         .nav-links li:nth-child(2){
             transition: all 0.5s ease-in 0.5s;
+            transform: translateY(0);
         }
         .nav-links li:nth-child(3){
             transition: all 0.5s ease-in 0.7s;
+            transform: translateY(0);
         }
         li.fade{
             opacity: 1;

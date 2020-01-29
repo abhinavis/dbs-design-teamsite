@@ -6,8 +6,9 @@
     <meta name="author" content="DBS Bank">
     <meta name="description" content="The design team at DBS Bank building product and services for millions of customers">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design at DBS Bank</title>
+    <title>Design at DBS Bank - Our work - digibank, iWealth, digiportfolio, Peak Balance & More</title>
     
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     
     <link rel="stylesheet" href="https://use.typekit.net/hhs3zvs.css">
 
@@ -274,11 +275,13 @@
             <div class="desc">
                 <p class="section-desc">Taming a giant—that’s what it feels like. We have a complex product ecosystem spanning six countries, a large, dispersed tech team and a dizzying array of financial services rules and regulations to deal with. If you can handle Canopy, you can do anything. </p>
             </div>
-            <p class="links"><a href="#">Meet the giant</a></p>
-            <div class="image-container">
-                <div class="canopy-image">
-                    <img src="images/canopy.png" alt="">
+            <div class="rotary">
+                    <img src="/images/rotary.svg" alt="" class="rotary-icon">
                 </div>
+            <p class="links"><a href="#">Meet the giant</a></p>
+            
+            <div class="canopy">
+                <img src="/images/canopy.svg" alt="">
             </div>
     </section>
 
@@ -413,6 +416,13 @@
 </script>
 
 <script src="/nav.js"></script>
+
+<script>
+        ScrollOut({
+            once: true,
+            threshold: .5
+        });
+</script> 
 
 </body>
 </html>

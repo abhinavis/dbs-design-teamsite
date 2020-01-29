@@ -7,6 +7,8 @@
     <meta name="description" content="The design team at DBS Bank building product and services for millions of customers">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Design at DBS Bank</title>
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     
     
     <link rel="stylesheet" href="https://use.typekit.net/hhs3zvs.css">
@@ -73,7 +75,7 @@
         <!-- *Section 3 - Our Values -->
 
         <section class="values">
-            <div class="value-1">
+            <div data-scroll class="value-1">
                 <p class="value-number">01</p>
                 <p class="value-title">Curiosity over certainity</p>
                 <p class="value-desc">We strive to keep an open mind, and to seek diverse viewpoints. This means that we share our knowledge, time and attention with each other generously.<br> <br>
@@ -84,7 +86,7 @@
                 <p class="value-title">Our values</p>
                 <p class="value-desc">These are the words we live by on an everyday basis so we know where at boy</p>
             </div>
-            <div class="value-2">
+            <div data-scroll class="value-2">
                 <p class="value-number">02</p>
                 <p class="value-title">Step up & step in</p>
                 <p class="value-desc">We step up and step in to help others. We take initiative to see a project through (even if it's not exactly in our job description). 
@@ -92,7 +94,7 @@
                         <br><br>If something needs fixing, we do our best to fix it.</p>
                         <img src="images/value-2-img.svg" class="value-2-img" alt="">
             </div>
-            <div class="value-3">
+            <div data-scroll class="value-3">
                 <p class="value-number">03</p>
                 <p class="value-title">One band, one sound</p>
                 <p class="value-desc">We want our work to make an impact. 
@@ -101,7 +103,7 @@
                         <br><br>This doesn't mean we're all the same: the band needs different instruments to sound interesting (nobody wants to listen to 60 oboes).</p>
                         <img src="images/value-3-img.svg" class="value-3-img" alt="">
             </div>
-            <div class="value-4">
+            <div data-scroll class="value-4">
                 <p class="value-number">04</p>
                 <p class="value-title">Connect & celebrate</p>
                 <p class="value-desc">We're all whole people and we all have lives outside of work. We make the effort to get to know each other, to celebrate one another, and to build real connections within our team. 
@@ -109,7 +111,7 @@
                         <br><br>If you're having a bad day, that's okay. Here, have some chocolate and a hug.</p>
                         <img src="images/value-4-img.svg" class="value-4-img" alt="">
             </div>
-            <div class="value-5">
+            <div data-scroll class="value-5">
                 <p class="value-number">05</p>
                 <p class="value-title">Grit</p>
                 <p class="value-desc">We're building something new, and that's never easy. We know that success takes hard work, and we have the patience to see things through. 
@@ -139,98 +141,7 @@
             </div>
         </section>
 
-        <!-- <section class="team-pictures">
-                <div class="dept-1">
-                    <div class="dept-img">
-                        <img src="" alt="">
-                    </div>
-                    <p class="dept-name">Core Banking</p>
-                </div>
-                
-                <div class="dept-2">
-                    <div class="dept-img">
-                        <img src="" alt="">
-                    </div>
-                    <p class="dept-name">Investments & Insurance</p>
-                </div>
-
-                <div class="dept-3">
-                    <div class="dept-img">
-                        <img src="" alt="">
-                    </div>
-                    <p class="dept-name">Deposits & Loans</p>
-                </div>
-
-                <div class="dept-4">
-                    <div class="dept-img">
-                        <img src="" alt=""> 
-                    </div>
-                    <p class="dept-name">Payments</p>
-                </div>
-
-                <div class="dept-5">
-                    <div class="dept-img">
-                        <img src="" alt="">
-                    </div>
-                    <p class="dept-name">Design Systems & Standards</p>
-                </div>
-
-                <div class="dept-6">
-                    <div class="dept-img">
-                        <img src="" alt="">
-                    </div>
-                    <p class="dept-name">UX Writing</p>
-                </div>
-
-                <div class="dept-6">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">UX Research</p>
-                </div>
-
-                <div class="dept-7">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">Corporate Banking</p>
-                </div>
-
-                <div class="dept-8">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">Enterprise Experience</p>
-                </div>
-                <div class="dept-8">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">Personal Finance Management</p>
-                </div>
-
-                <div class="dept-9">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">Design Ops</p>
-                </div>
-
-                <div class="dept-9">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">Quality Assesment</p>
-                </div>  
-
-                <div class="dept-10">
-                <div class="dept-img">
-                    <img src="" alt="">
-                </div>
-                <p class="dept-name">Bady's Team</p>
-                </div>
-            </div>
-        </section> -->
+        
 
 
         <!-- *Section 5 - Now that you've met us -->
@@ -291,5 +202,12 @@
 <script>
     const swup = new Swup();
 </script>
+
+<script>
+    ScrollOut({
+        once: true,
+        threshold: .5
+    });
+</script> 
 </body>
 </html>
