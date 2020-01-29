@@ -1268,7 +1268,10 @@ aside > p {
         .page-headline {
             font-size: 48px;
             font-weight: var(--weight-black);
-    
+        }
+
+        .headline {
+            margin-top: 50%;
         }
         .hero-image {
             width: 100%;
