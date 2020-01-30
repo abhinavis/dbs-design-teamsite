@@ -54,7 +54,44 @@ html, body {
 
 /************ Keyframes *************/
 
+.wordContainer {
+    overflow: hidden;
+}
 
+@keyframes up {
+    100% {
+       transform: translateY(-5%);
+    }
+ }
+
+ .word {
+    animation: up 0.8s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateY(115%);
+ }
+ .wordContainer:nth-child(1) .word { 
+    animation-delay: 0.5s;
+ }
+ .wordContainer:nth-child(2) .word { 
+    animation-delay: 0.8s;
+ }
+ .wordContainer:nth-child(3) .word { 
+    animation-delay: 1s;
+ }
+ .wordContainer:nth-child(4) .word { 
+    animation-delay: 1.65s;
+ }
+ .wordContainer:nth-child(5) .word { 
+    animation-delay: 1.65s;
+ }
+ .wordContainer:nth-child(6) .word { 
+    animation-delay: 1.65s;
+ }
+ .wordContainer:nth-child(7) .word { 
+    animation-delay: 1.65s;
+ }
 
 
 /************** On Scroll Animation ***************/
@@ -170,7 +207,7 @@ nav{
     grid-row-gap: 13.75em;
 }
 
-.page-headline {
+.page-headline, .word {
     font-family: var(--font-serif);
     /* font-size: calc(100px + 56 * ((100vw - 320px) / (2280))); */
     font-size: calc(100px + 3vw);
@@ -178,6 +215,10 @@ nav{
     color: var(--color-black);
     font-weight: var(--weight-bold);
        
+}
+
+.textWrapper {
+    margin-top: 100px;
 }
 
 .section-headline {
