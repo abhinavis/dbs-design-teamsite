@@ -353,6 +353,7 @@ nav{
 
 .article-title a {
     text-decoration: none;
+    color: inherit;
 }
 
 .article-title a:visited {
@@ -1185,6 +1186,7 @@ aside > p {
 
 .footer-links a:hover {
     color: #8a8a8a;
+    transition: all 0.3s ease;
 }
 
 @-webkit-keyframes rotary-icon /* Safari and Chrome */ {
@@ -1308,12 +1310,12 @@ aside > p {
             margin: 0 auto;
             grid-row-gap: 10em;
         }
-        .page-headline {
-            font-size: 48px;
+        .page-headline, .word {
+            font-size: 40px;
             font-weight: var(--weight-black);
         }
 
-        .headline {
+        .headline, .textWrapper {
             margin-top: 50%;
         }
         .hero-image {
