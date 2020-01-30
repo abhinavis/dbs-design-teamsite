@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     
     
+    
     <link rel="stylesheet" href="https://use.typekit.net/hhs3zvs.css">
 
 
@@ -20,6 +21,7 @@
 
     <script src="/nav.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
+    
       
     
 </head>
@@ -31,8 +33,9 @@
         <a href="/index.html"><img src="images/logo.svg" alt="Home" class="logo"></a>
     </div>
     <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
 
     <ul class="nav-links">
@@ -54,7 +57,7 @@
             <h1 class="page-headline"><span class="hidetext-2">people designing </span></h1>
             <h1 class="page-headline"><span class="hidetext-3">a bank</span></h1>
         </div>
-        <div data-scroll class="hero-image">
+        <div class="hero-image">
             <img src="/images/header-image.jpg" alt="">
         </div>
     </section>
@@ -86,14 +89,14 @@
         <h2 class="section-headline">One band, one sound</h2>
         <p class="section-desc">We are a team of 60 (and growing) based out of Singapore. We are gamers, cat lovers, calligraphists, crazy gardeners, marathoners, cyclists, ukulele-players. 15 nationalities, and counting. </p>
         <p class="links"><a href="/people.html">Get to know us</a></p>
-        <div class="home-image">
+        <div data-scroll class="home-image">
             <img src="/images/home-people-image.jpg" alt="">
         </div>
     </section>
 
     <!-- *Section-8 -- Testimonials -->
 
-    <div class="testimonial-slider">
+    <div data-scroll class="testimonial-slider">
         <div class="testimonial-main">
             <p>"People make the team. Whilst investing the time to find the right people for each role is key, supporting the growth of those who have joined is just as critical."</p>
         </div>
@@ -149,60 +152,6 @@
             <div class="job-container">
                 <div class="job-desc">
                     <div class="job-title">VP, Principal Designer</div>
-                    <div class="job-sub-title">Design Standards</div>
-                </div>
-                <div class="arrow">
-                    <img src="/images/arrow-icon.svg" alt="">
-                </div>
-            </div>
-            <div class="job-container">
-                <div class="job-desc">
-                    <div class="job-title">AVP, Product Designer</div>
-                    <div class="job-sub-title">Consumer Banking Group</div>
-                </div>
-                <div class="arrow">
-                    <img src="/images/arrow-icon.svg" alt="">
-                </div>
-            </div>
-            <div class="job-container">
-                <div class="job-desc">
-                    <div class="job-title">AVP, Product Designer</div>
-                    <div class="job-sub-title">Middle Office technology</div>
-                </div>
-                <div class="arrow">
-                    <img src="/images/arrow-icon.svg" alt="">
-                </div>
-            </div>
-            <div class="job-container">
-                <div class="job-desc">
-                    <div class="job-title">Senior Associate, Product Designer</div>
-                    <div class="job-sub-title">Consumer Banking Group</div>
-                </div>
-                <div class="arrow">
-                    <img src="/images/arrow-icon.svg" alt="">
-                </div>
-            </div>
-            <div class="job-container">
-                <div class="job-desc">
-                    <div class="job-title">Senior Associate, Design Standards</div>
-                    <div class="job-sub-title">Design Standards</div>
-                </div>
-                <div class="arrow">
-                    <img src="/images/arrow-icon.svg" alt="">
-                </div>
-            </div>
-            <div class="job-container">
-                <div class="job-desc">
-                    <div class="job-title">AVP, User Researcher</div>
-                    <div class="job-sub-title">Institutional Banking Group</div>
-                </div>
-                <div class="arrow">
-                    <img src="/images/arrow-icon.svg" alt="">
-                </div>
-            </div>
-            <div class="job-container">
-                <div class="job-desc">
-                    <div class="job-title">VP/AVP, UX Engineer</div>
                     <div class="job-sub-title">Design Standards</div>
                 </div>
                 <div class="arrow">
@@ -289,16 +238,22 @@
  
 <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 
-<script>
-    const swup = new Swup();
-</script>
+<script>const swup = new Swup();</script>
+<!-- <script>
+    const swup = new Swup({
+        plugins: [new SwupScrollPlugin()]
+    });
+</script> -->
+
 
 <script>
         ScrollOut({
             once: true,
             threshold: .2
         });
-</script> 
+</script>
+
+
 
 </body>
 </html>

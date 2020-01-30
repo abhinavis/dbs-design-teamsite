@@ -11,12 +11,14 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     
     
+    
     <link rel="stylesheet" href="https://use.typekit.net/hhs3zvs.css">
 
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
 
     <script src="/nav.ce572f91.js"></script>
     <link rel="stylesheet" href="/style.e308ff8e.css">
+    <script>window.scrollTo(0, 0);</script>
     
 </head>
 <body>
@@ -29,8 +31,9 @@
         <a href="/index.html"><img src="/logo.236e4034.svg" alt="Home" class="logo"></a>
     </div>
     <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
 
     <ul class="nav-links">
@@ -135,7 +138,7 @@
 
         <!-- *Section 4 - Team Pictures -->
 
-        <section class="section-allofus">
+        <section data-scroll="" class="section-allofus">
             <div class="team-image">
                 <img src="/all-of-us.078ce2e6.jpg" alt="">
             </div>
@@ -199,11 +202,19 @@
 
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 
+
 <script>var swup = new Swup();</script>
+<!-- <script>
+    const swup = new Swup({
+        plugins: [new SwupScrollPlugin()]
+    });
+</script> -->
+
 
 <script>ScrollOut({
   once: true,
-  threshold: .5
+  threshold: .2
 });</script> 
+
 </body>
 </html>

@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Design at DBS Bank</title>
 
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
     <link rel="stylesheet" href="https://use.typekit.net/hhs3zvs.css">
 
 
@@ -32,8 +34,9 @@
         <a href="/index.html"><img src="/logo.236e4034.svg" alt="Home" class="logo"></a>
     </div>
     <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
 
     <ul class="nav-links">
@@ -63,7 +66,7 @@
                 <p class="section-desc">We put a lot of effort in hiring. So we end up with nice people we like to be around. Many of us are friends after hours (and during happy hours).<br><br>We also do more organised kind of fun. Creative days once a month: a ceramics workshop, tea blending, movies at The Projector, tai chi, to name a few. And an offsite trip somewhere nice and abroad once a year.</p>
             </div>
         
-            <div class="hh-image">
+            <div data-scroll="" class="hh-image">
                 <img src="/hh-image.4b3fadfc.jpg" class="" alt="">
             </div>
             
@@ -90,7 +93,7 @@
                         <p>If you are ready to be promoted, we will fight to make it happen.</p>
                     </div>
             </div>
-            <div class="hh-image">
+            <div data-scroll="" class="hh-image">
                 <img src="/office-image.803a5936.jpg" class="" alt="">
             </div>
         </section>
@@ -108,7 +111,7 @@
 
 
 
-        <section class="section-2">
+        <section data-scroll="" class="section-2">
                 <div class="chooake-pic">
                     <img src="/chooake.3b4c76fe.jpg" alt="">
                 </div>
@@ -140,7 +143,7 @@
             </section>
 
 
-        <section class="section-whowehire">
+        <section data-scroll="" class="section-whowehire">
             <h2 class="section-headline">Who we hire</h2>
             <div class="job-categories">
                 <div class="job-1">
@@ -232,6 +235,7 @@
         <!-- *Section-7 -- Open roles -->
     <!-- <h2 class="section-headline">Open roles — Singapore</h2> -->
     <section class="section-7">
+        <!-- <h2 class="section-headline">Open roles — Singapore</h2> -->
         <a href="/job-1.html"><div class="job-container">
         <div class="job-desc">
             <div class="job-title">SVP, Research Lead</div>
@@ -368,6 +372,17 @@
 <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 
 <script>var swup = new Swup();</script>
+<!-- <script>
+    const swup = new Swup({
+        plugins: [new SwupScrollPlugin]
+    });
+</script> -->
+
+
+<script>ScrollOut({
+  once: true,
+  threshold: .2
+});</script> 
 
 </body>
 </html>

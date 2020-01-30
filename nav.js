@@ -1,6 +1,11 @@
 import { link } from "fs";
 
 const swup = new Swup();
+// const swup = new Swup({
+//     plugins: [new SwupScrollPlugin()]
+//   });
+
+  
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
@@ -14,6 +19,12 @@ hamburger.addEventListener('click', ()=>{
     links.forEach(link => {
         link.classList.toggle("fade");
     });
+
+navLinks.addEventListener('click',()=>{
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("toggle");
+    
+});
 
     //Hamburger Animation
     hamburger.classList.toggle("toggle");

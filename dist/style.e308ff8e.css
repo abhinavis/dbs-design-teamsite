@@ -60,7 +60,7 @@ html, body {
 /************** On Scroll Animation ***************/
 
 [data-scroll] {
-    transition: all ease 1s;
+    transition: all ease 0.8s;
 }
 
 [data-scroll="in"] {
@@ -70,7 +70,7 @@ html, body {
 
 [data-scroll="out"] {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(60px);
 }
 
 
@@ -133,7 +133,7 @@ nav{
 
 .hamburger div{
     width: 30px;
-    height:3px;
+    height:2px;
     background: #C7CFD5;
     margin: 5px;
     transition: all 0.3s ease;
@@ -681,10 +681,11 @@ nav{
 }
 
 .mission-content {
-    font-size: var(--size-20);
+    font-size: var(--size-18);
     font-family: var(--font-sans);
     color: #454F57;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    width: 90%;
 }
 
 .open-roles {
@@ -935,6 +936,7 @@ aside > p {
 .section-7 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     margin-top: -200px;
     grid-column-gap: 4em;
 }
@@ -1557,20 +1559,40 @@ aside > p {
     
         }
         .nav-links li:nth-child(1){
-            transition: all 0.5s ease-in 0.3s;
-            transform: translateY(0);
-        
+            /* transition: all 0.5s ease-in 0.3s; */
+            transition-delay: 0.2s;
+            
+
         }
         .nav-links li:nth-child(2){
-            transition: all 0.5s ease-in 0.5s;
-            transform: translateY(0);
+            /* transition: all 0.5s ease-in 0.5s; */
+            transition-delay: 0.4s;
+        
         }
         .nav-links li:nth-child(3){
-            transition: all 0.5s ease-in 0.7s;
-            transform: translateY(0);
+            /* transition: all 0.5s ease-in 0.7s; */
+            transition-delay: 0.6s;
+        
         }
         li.fade{
             opacity: 1;
+            transform: translateY(-20px);
+            transition: all 0.5s linear 0.3s;
+        }
+
+        li.fadein {
+            opacity: 1;
+        }
+        
+        .toggle .line1{
+            transform: rotate(-45deg) translate(-4px,6px);
+            }
+            .toggle .line2{
+            transition: all 0.7s ease;
+            width:0;
+            }
+            .toggle .line3{
+            transform: rotate(45deg) translate(-4px,-6px);
         }
     }
 
