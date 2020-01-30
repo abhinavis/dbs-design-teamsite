@@ -158,6 +158,7 @@ nav{
     text-decoration: none;
     text-emphasis: none;
     padding-left: 24px;
+    color: inherit;
 }
 .nav-links li a:hover {
     color: #8a8a8a;
@@ -364,6 +365,7 @@ nav{
 
 .footer-links li a {
     text-decoration: none;
+    color: inherit;
 }
 
 .footer-links li a:visited {
