@@ -12,7 +12,7 @@
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <use id="Mask" fill="#F8F8F8" xlink:href="#path-1"></use>
                 <g id="Group-24" mask="url(#mask-2)">
                     <g transform="translate(-388.000000, 4.000000)">
                         <g id="Group-23" transform="translate(726.000000, 263.780000)">
