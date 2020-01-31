@@ -336,6 +336,17 @@ nav{
     top: 84px;
 }
 
+.main-work-image img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+.main-work-image {
+    grid-column: 1 / span 2;
+    margin-top: 50px;
+}
+
 
 
 .travel-mode-modal {
