@@ -1429,8 +1429,14 @@ aside > p {
             width: 100%;
         }
 
+        .section-7-careers {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
         .section-7-careers .section-headline {
             margin-bottom: 1em;
+            grid-column: 1;
         }
 
         .job-desc {
