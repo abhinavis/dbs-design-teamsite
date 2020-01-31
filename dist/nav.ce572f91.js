@@ -132,16 +132,19 @@ var hamburger = document.querySelector(".hamburger");
 var navLinks = document.querySelector(".nav-links");
 var links = document.querySelectorAll(".nav-links li");
 hamburger.addEventListener('click', function () {
-  //Animate Links
+  //Hamburger Animation
+  hamburger.classList.toggle("toggle"); //Animate Links
+
   navLinks.classList.toggle("open");
   links.forEach(function (link) {
     link.classList.toggle("fade");
   });
-  navLinks.addEventListener('click', function () {
-    navLinks.classList.toggle("open");
-    hamburger.classList.toggle("toggle");
-  }); //Hamburger Animation
-
+});
+navLinks.addEventListener('click', function () {
+  navLinks.classList.toggle("open");
+  links.forEach(function (link) {
+    link.classList.toggle("fade");
+  });
   hamburger.classList.toggle("toggle");
 });
 },{"fs":"node_modules/parcel-bundler/src/builtins/_empty.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
