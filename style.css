@@ -1275,7 +1275,7 @@ aside > p {
 
 
 @media screen
-    and (max-width: 375px)
+    and (max-width: 414px) and (min-width: 320px)
      {
         .section-2, .section-3, .section-6 {
             display: grid;
@@ -1346,7 +1346,7 @@ aside > p {
 
 
 @media screen
-    and (max-device-width: 375px)
+    and (max-width: 414px) and (min-width: 320px)
      {
 
         .transition-fade {
@@ -1482,7 +1482,7 @@ aside > p {
     /* ? OUR WORK */
 
     @media screen
-    and (max-device-width: 375px) {
+    and (max-width: 414px) and (min-width: 320px) {
 
         .section-3-peek {
             display: grid;
@@ -1550,7 +1550,7 @@ aside > p {
     /* ? CAREERS */
 
     @media screen
-    and (max-device-width: 375px) {
+    and (max-width: 414px) and (min-width: 320px) {
         
         .hh-image img {
             width: 100%;
@@ -1620,7 +1620,7 @@ aside > p {
     /* ? OUR PEOPLE */
 
     @media screen
-    and (max-device-width: 375px) {
+    and (max-width: 414px) and (min-width: 320px) {
 
         .section-better {
             display: grid;
@@ -1643,7 +1643,8 @@ aside > p {
 
 
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 600px) and (min-width: 320px) {
+        
         nav{
             position: fixed;
             z-index: 3;
@@ -1842,7 +1843,4 @@ aside > p {
 
         
     } */
-
-    
-
-}
+    }
