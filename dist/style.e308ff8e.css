@@ -757,6 +757,17 @@ nav{
     font-weight: var(--weight-bold);
 }
 
+.section-7-careers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+}
+
+.section-7-careers .section-headline {
+    margin-bottom: 1em;
+    grid-column: 1 / span 2;
+}
+
 /*************?--End of CAREERS.html--***************/
 
 
@@ -794,7 +805,7 @@ nav{
 }
 
 .main-job-container {
-    max-width: 700px;
+    max-width: 650px;
     min-width: 345px;
     margin: 0 auto;
 }
@@ -883,6 +894,7 @@ aside > p {
     margin-bottom: 1em;
     font-family: var(--font-sans);
     font-size: var(--size-18);
+    padding: 10px;
 }
 
 .choose-file input {
@@ -1145,7 +1157,7 @@ aside > p {
 
 .footer {
     background: white;
-    height: 100%;
+    height: 300px;
     margin-top: 120px;
     border-top: 1px solid rgb(236, 236, 236);
 }
@@ -1156,7 +1168,6 @@ aside > p {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     margin-top: 80px;
-    margin-bottom: 80px;
 
 }
 
@@ -1200,6 +1211,17 @@ aside > p {
 .footer-links a:hover {
     color: #8a8a8a;
     transition: all 0.3s ease;
+}
+
+.footer-menu-2 a:visited {
+    color: inherit;
+}
+
+.footer-menu-2 a {
+    color: inherit;
+}
+.footer-menu-1 a {
+    color: inherit;
 }
 
 @-webkit-keyframes rotary-icon /* Safari and Chrome */ {
@@ -1407,6 +1429,10 @@ aside > p {
             width: 100%;
         }
 
+        .section-7-careers .section-headline {
+            margin-bottom: 1em;
+        }
+
         .job-desc {
             padding-left: 16px;
         }
@@ -1542,7 +1568,36 @@ aside > p {
         .chooake-pic img {
             width: 100%;
         }
-    }
+
+        .main-job-container {
+            width: 100%;
+        }
+
+        .job-heading {
+            font-size: var(--size-32);
+        }
+
+        .role-desc {
+            font-size: var(--size-20);
+        }
+
+        .role-content-body {
+            font-size: var(--size-18);
+            color: #454F57;
+        }
+
+        .role-content-what h4 {
+            font-size: var(--size-18);
+        }
+        
+        .pointers {
+            font-size: var(--size-18);
+            color: #454F57;
+        }
+        
+        .text-field, .message-field {
+            width: 100%;
+        }
 
 
     /* ? OUR PEOPLE */
@@ -1773,6 +1828,6 @@ aside > p {
 
     
 
-    
+}
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
