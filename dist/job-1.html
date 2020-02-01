@@ -219,13 +219,15 @@ Every day, there’s a lot more to explore, experience and enjoy—and a lot les
 <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 
 
-<script>var swup = new Swup();</script>
+<script>var swup = new Swup({
+  plugins: [new SwupScrollPlugin()]
+});</script>
 
 <script>ScrollOut({
   once: true,
   threshold: .5
 });</script> 
-    
+<script>window.scrollTo(0, 0);</script>
 </body>
 </html>
 

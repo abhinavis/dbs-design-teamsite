@@ -1,9 +1,10 @@
 import { link } from "fs";
+import SwupScrollPlugin from '@swup/scroll-plugin';
 
-const swup = new Swup();
-// const swup = new Swup({
-//     plugins: [new SwupScrollPlugin()]
-//   });
+// const swup = new Swup();
+const swup = new Swup({
+    plugins: [new SwupScrollPlugin()]
+  });
 
   
 

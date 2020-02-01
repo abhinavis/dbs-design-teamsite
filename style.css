@@ -1662,13 +1662,13 @@ aside > p {
         }
         .nav-links{
             position: fixed;
-            background: #f8f8f8;
+            background: #fff;
             height: 100vh;
             width: 100%;
             flex-direction: column;
             clip-path: circle(50px at 90% -20%);
             -webkit-clip-path: circle(50px at 90% -10%);
-            transition: all 0.5s ease-out;
+            transition: all 0.5s ease;
             pointer-events: none;
             font-size: calc(40px + 4vw);
             justify-content: center;
