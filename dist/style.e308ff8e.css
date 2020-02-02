@@ -130,7 +130,7 @@ a:visited {
 
 /************** Navigation ***************/
 nav{
-    height: 6rem;
+    height: 8rem;
     width: 90vw;
     margin: 0 auto;
     background-color: #f8f8f8;
@@ -947,7 +947,7 @@ aside > p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 5em;
 }
 
 .article {
@@ -1389,7 +1389,7 @@ aside > p {
         }
 
         .article {
-            width: 320px;
+            width: 100%;
             justify-self: center;
         }
 
@@ -1397,7 +1397,13 @@ aside > p {
             justify-self: center;
         }
 
-        
+        .article-img-container {
+            width: 100%;
+        }
+
+        .article-title {
+            font-size: var(--size-18);
+        }  
 
         .footer-width {
             display: grid;
@@ -1456,6 +1462,7 @@ aside > p {
 
         .job-desc {
             padding-left: 16px;
+            padding-right: 0;
         }
 
         .job-title {
@@ -1584,6 +1591,7 @@ aside > p {
         .article-section {
             display: grid;
             grid-template-columns: 1fr;
+            width: 100%;
         }
 
         .chooake-pic img {
@@ -1931,6 +1939,9 @@ aside > p {
             width: 30%;
         }
 
+        .article-title {
+            font-size: var(--size-18);
+        }
         /* .footnote {
             margin-top: -200px;
         } */
