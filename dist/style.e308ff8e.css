@@ -739,18 +739,18 @@ nav{
 }
 
 .mission-title {
-    font-size: var(--size-40);
+    font-size: var(--size-32);
     font-weight: var(--weight-bold);
     color: var(--color-black);
     font-family: var(--font-serif);
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .mission-content {
     font-size: var(--size-18);
     font-family: var(--font-sans);
     color: #454F57;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     width: 90%;
 }
 
@@ -765,7 +765,7 @@ nav{
 
 .email {
     font-family: var(--font-serif);
-    color: var(--color-red);
+    color: #FF5678;
     font-weight: var(--weight-bold);
 }
 
@@ -835,7 +835,7 @@ nav{
     color: var(--color-black);
     font-size: var(--size-24);
     margin-bottom: 2em;
-    border-left: 4px solid #FCE4FF;
+    border-left: 4px solid #FF5678;
 }
 aside > p {
     margin: 1em;
@@ -1144,6 +1144,7 @@ aside > p {
     color: var(--color-red);
     font-family: var(--font-sans);
     font-weight: 500;
+    margin-bottom: 4px;
 }
 
 .desig {
