@@ -865,8 +865,8 @@ aside > p {
     font-size: var(--size-20);
     width: 200px;
     height: 56px;
-    border-radius: 8px;
-    background: var(--color-red);
+    border-radius: 4px;
+    background: #FF5678;
     text-align: center;
     border: none;
     color: white;
