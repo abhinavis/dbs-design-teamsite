@@ -1078,10 +1078,12 @@ aside > p {
     justify-self: end;
     align-self: center;
     padding-right: 39px;
-    transform: translateX(-20px);  
+    transform: translateX(-20px);
+    opacity: 0;
 }
 
 .job-container:hover > .arrow {
+    opacity: 1;
     transform: translateX(0);
     transition: all 300ms ease-out;
 }
