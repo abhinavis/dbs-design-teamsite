@@ -33,7 +33,7 @@ html, body {
     --size-18: 1.125em;
     --size-16: 1em;
     --size-14: 0.875em;
-    --color-bg: #f8f8f8;
+    --color-bg: #fff;
     --color-black: #172633;
     --color-red: #ff3e3e;
     --color-grey: #b3b3b3;
@@ -133,7 +133,7 @@ nav{
     height: 8rem;
     width: 90vw;
     margin: 0 auto;
-    background-color: #f8f8f8;
+    background-color: #fff;
     display: flex;
     z-index: 10;
 }
@@ -1026,7 +1026,7 @@ aside > p {
 .job-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #f5f5f5;
 
 }
 

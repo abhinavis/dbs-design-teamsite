@@ -12,7 +12,7 @@
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill="#F8F8F8" xlink:href="#path-1"></use>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
                 <g id="Group-24" mask="url(#mask-2)">
                     <g transform="translate(-388.000000, 4.000000)">
                         <g id="Group-23" transform="translate(726.000000, 263.780000)">
@@ -91,7 +91,7 @@
                                 <polygon id="Rectangle-Copy-25_Right_Isometric" fill="#1F616B" points="74.86875 104.81625 149.7375 67.381875 149.7375 37.434375 74.86875 74.86875"></polygon>
                                 <polygon id="Rectangle-Copy-25_Top_Isometric" fill="#142A35" points="0 37.434375 74.86875 0 149.7375 37.434375 74.86875 74.86875"></polygon>
                             </g>
-                            <g id="Rectangle-Copy-25_Isometric-Copy" transform="translate(377.338500, 181.469750)">
+                            <g id="Rectangle-Copy-25_Isometric-Copy" transform="translate(377.338500, 186.469750)">
                                 <polygon id="Rectangle-Copy-25_Left_Isometric" fill="#2D8996" points="74.86875 104.81625 0 67.381875 0 37.434375 74.86875 74.86875"></polygon>
                                 <polygon id="Rectangle-Copy-25_Top_Isometric" fill="#142A35" points="0 37.434375 74.86875 0 149.7375 37.434375 74.86875 74.86875"></polygon>
                             </g>
