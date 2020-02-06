@@ -1243,6 +1243,10 @@ aside > p {
     color: inherit;
 }
 
+.footer-menu-2 .footer-links a:hover {
+    color: #8a8a8a;
+}
+
 @-webkit-keyframes rotary-icon /* Safari and Chrome */ {
     from {
       -webkit-transform: rotate(0deg);
