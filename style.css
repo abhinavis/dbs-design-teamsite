@@ -1964,3 +1964,8 @@ aside > p {
         
     }
     
+    @media screen and (max-width: 5120px ) and (min-width: 2160px) {
+        .transition-fade {
+            width: 70%;
+        }
+    }
