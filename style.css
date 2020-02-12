@@ -127,6 +127,15 @@ a:visited {
     color: var(--color-black);
 }
 
+.copyright {
+    font-size: var(--size-14);
+    color: #8a8a8a;
+    font-family: var(--font-sans);
+    text-align: center;
+    margin-top: 40px;
+    background: #fafafa;
+}
+
 
 /************** Navigation ***************/
 nav{
@@ -1177,7 +1186,7 @@ aside > p {
 
 .footer {
     background: white;
-    height: 300px;
+    height: auto;
     margin-top: 120px;
     border-top: 1px solid rgb(236, 236, 236);
 }
