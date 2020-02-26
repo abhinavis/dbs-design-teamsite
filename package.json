@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html work.html people.html careers.html",
-    "build": "NODE_ENV=production parcel build --no-content-hash src/index.html --out-dir dist --no-cache"
+    "build": "NODE_ENV=production parcel build --public-url https://dbs.com/design --no-content-hash src/index.html --out-dir dist --no-cache"
   },
   "keywords": [],
   "author": "",
