@@ -1229,6 +1229,47 @@ aside > p {
   animation: rotary-icon 50s linear infinite;
 }
 
+.tinker-text {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  /* grid-column: 1 / span 2; */
+  /* background: #FFE4EA; */
+  padding: 100px;
+  line-height: 1.5;
+}
+
+.tinker {
+  position: relative;
+}
+
+.tinker-1 {
+  position: absolute;
+  top: 15%;
+  left: 38%;
+  z-index: -1;
+}
+
+.tinker-2 {
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  z-index: -1;
+}
+
+.tinker-3 {
+  position: absolute;
+  top: 73%;
+  left: 14%;
+  z-index: -1;
+}
+
+.tinker-4 {
+  position: absolute;
+  top: 77%;
+  left: 76%;
+}
+
+
 /************** Media Queries ***************/
 
 @media screen and (max-width: 414px) and (min-width: 320px) {
@@ -1296,6 +1337,33 @@ aside > p {
   .t-role {
     font-size: var(--size-16);
   }
+
+  .tinker-text {
+    font-size: var(--size-24);
+    padding: 0px;
+  }
+
+  .tinker-1 {
+    top: -3%;
+    width: 20%;
+    left: 57%;
+  }
+
+  .tinker-2 {
+    width: 16%;
+  }
+
+  .tinker-3 {
+    width: 17%;
+    left: 75%;
+  }
+
+  .tinker-4 {
+    top: 96%;
+    width: 22%;
+    left: 16%;
+  }
+
 }
 
 @media screen and (max-width: 414px) and (min-width: 320px) {
