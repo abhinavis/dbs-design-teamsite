@@ -1232,8 +1232,6 @@ aside > p {
 .tinker-text {
   font-family: var(--font-serif);
   font-size: 40px;
-  /* grid-column: 1 / span 2; */
-  /* background: #FFE4EA; */
   padding: 100px;
   line-height: 1.5;
 }
