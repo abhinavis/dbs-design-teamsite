@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157444246-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-157444246-1');
-    </script>
-    
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DBS Bank">
@@ -19,25 +9,13 @@
     <meta property="og:image" content="https://dbsbank.design/everyday-2.248529d4.png">
     <meta property="og:description" content="Hi there. We are the user experience (UX) design team at DBS bank in Singapore. And this is our story.">
     <meta property="og:title" content="Our work | Design at DBS Bank | digibank, iWealth, digiportfolio, Peak Balance & more">
-    <title>Our work - digibank, iWealth, digiportfolio, Peak Balance & more</title>
-    
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    
+    <title>Our work - digibank, iWealth, digiportfolio, Peak Balance & more</title>   
     
     <link rel="stylesheet" href="https://use.typekit.net/hhs3zvs.css">
-
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
-
-    <script src="nav.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
-    <script>window.scrollTo(0, 0);</script>
-    
+   
 </head>
 <body>
-
-
-   <!-- *Navigation -->
-
 <nav>
     <div class="logo">
         <a href="index.html"><img src="/images/logo.svg" alt="Home" class="logo"></a>
@@ -439,25 +417,29 @@
         </div>
         <p class="copyright">©2020 DBS Bank Ltd</p>
     </div>
-
-<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
-
-<script>const swup = new Swup();</script>
-<!-- <script>
-    const swup = new Swup({
-        plugins: [new SwupScrollPlugin()]
-    });
-</script> -->
-
-
-<script src="nav.js"></script>
-
-<script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157444246-1"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'UA-157444246-1');
+     </script>
+     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="https://unpkg.com/@swup/scroll-plugin@1.0.6/dist/SwupScrollPlugin.min.js"></script>
+    <script src="/nav.js"></script>
+    <script>
         ScrollOut({
             once: true,
-            threshold: .2
+            threshold: .4
         });
-</script> 
+    </script>
+    <script>
+        window.scrollTo(0, 0);
+    </script>
 
 </body>
 </html>
