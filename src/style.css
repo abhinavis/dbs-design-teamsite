@@ -746,7 +746,7 @@ html.is-animating .transition-fade {
 
 .section-7-careers {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 4em;
 }
 
@@ -1267,7 +1267,6 @@ aside > p {
   left: 76%;
 }
 
-
 /************** Media Queries ***************/
 
 @media screen and (max-width: 414px) and (min-width: 320px) {
@@ -1361,7 +1360,6 @@ aside > p {
     width: 22%;
     left: 16%;
   }
-
 }
 
 @media screen and (max-width: 414px) and (min-width: 320px) {
