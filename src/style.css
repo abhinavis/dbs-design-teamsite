@@ -748,7 +748,7 @@ html.is-animating .transition-fade {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 4em;
-  padding-bottom: 20%;
+  padding-bottom: 5%;
 }
 
 .section-7-careers .section-headline {
@@ -971,10 +971,11 @@ aside > p {
 
 .section-7 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin-top: -200px;
   grid-column-gap: 4em;
+  margin-bottom: 5%;
 }
 
 .job-container {
