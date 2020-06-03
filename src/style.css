@@ -748,6 +748,7 @@ html.is-animating .transition-fade {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 4em;
+  padding-bottom: 20%;
 }
 
 .section-7-careers .section-headline {
