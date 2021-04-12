@@ -746,7 +746,7 @@ html.is-animating .transition-fade {
 
 .section-7-careers {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 4em;
   padding-bottom: 5%;
 }
