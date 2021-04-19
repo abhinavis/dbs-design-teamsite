@@ -6,7 +6,6 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-console.log(hamburger)
 hamburger.addEventListener("click", () => {
   //Hamburger Animation
   hamburger.classList.toggle("toggle");
