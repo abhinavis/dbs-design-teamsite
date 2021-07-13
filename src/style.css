@@ -518,7 +518,7 @@ html.is-animating .transition-fade {
 .values {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   grid-gap: 40px;
   width: 90%;
   margin: 0 auto;
@@ -530,6 +530,8 @@ html.is-animating .transition-fade {
   padding: 40px;
   position: relative;
   border-radius: 4px;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 
 .value-2 {
@@ -537,6 +539,8 @@ html.is-animating .transition-fade {
   padding: 40px;
   position: relative;
   border-radius: 4px;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .value-3 {
@@ -544,6 +548,8 @@ html.is-animating .transition-fade {
   padding: 40px;
   position: relative;
   border-radius: 4px;
+  grid-row: 2 / 3;
+  grid-column: 3 / 3;
 }
 
 .value-4 {
@@ -551,6 +557,8 @@ html.is-animating .transition-fade {
   padding: 40px;
   position: relative;
   border-radius: 4px;
+  grid-row: 3 / 3;
+  grid-column: 1 / 2;
 }
 
 .value-5 {
@@ -558,11 +566,24 @@ html.is-animating .transition-fade {
   padding: 40px;
   position: relative;
   border-radius: 4px;
+  grid-row: 3 / 3;
+  grid-column: 2 / 3;
+}
+
+.value-6 {
+  background: #fbfbfb;
+  padding: 40px;
+  position: relative;
+  border-radius: 4px;
+  grid-row: 3 / 3;
+  grid-column: 3 / 3;
 }
 
 .value-main {
   text-align: center;
   align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 .value-main .value-title {
@@ -577,7 +598,8 @@ html.is-animating .transition-fade {
 .value-2-img,
 .value-3-img,
 .value-4-img,
-.value-5-img {
+.value-5-img,
+.value-6-img {
   position: absolute;
   overflow: hidden;
   right: 0;
@@ -1657,6 +1679,11 @@ aside > p {
       grid-template-columns: 1fr;
       width: 100%;
     }
+
+    .values .value-main, .values .value-1, .values .value-2, .values .value-3, .values .value-4, .values .value-5, .values .value-6 {
+      grid-column: 1;
+      grid-row: auto;
+    }
   }
 
   @media screen and (max-width: 600px) and (min-width: 320px) {
@@ -1768,6 +1795,11 @@ aside > p {
   .values {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .values .value-main, .values .value-1, .values .value-2, .values .value-3, .values .value-4, .values .value-5, .values .value-6 {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .job-categories {
