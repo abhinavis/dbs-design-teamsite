@@ -849,6 +849,11 @@ aside > p {
   margin-left: 40px;
 }
 
+.pointers ul {
+  margin-left: 40px;
+  margin-top: 1rem;
+}
+
 .apply-button {
   display: inline-block;
   font-family: var(--font-sans);
