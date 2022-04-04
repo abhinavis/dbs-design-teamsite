@@ -2221,6 +2221,10 @@ aside > p {
   background: var(--color-off-white);
 }
 
+.archive-card__a {
+  color: inherit;
+}
+
 .archive-card__title {
   font-family: var(--font-serif);
   font-size: var(--size-18);

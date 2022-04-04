@@ -5,16 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html src/work.html src/people.html src/careers.html src/story--draft.html",
+    "start": "parcel src/index.html src/work.html src/people.html src/careers.html",
     "build:local": "rm -rf dist && NODE_ENV=production parcel build src/index.html --out-dir dist --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
     "build:local-win": "rm -rf dist && mkdir .\\dist && SET NODE_ENV=production parcel build src/index.html --out-dir dist --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
-    "build": "rm -rf dist && NODE_ENV=production parcel build src/index.html --out-dir dist --public-url https://www.dbs.com/design --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml"
+    "build": "rm -rf dist && NODE_ENV=production parcel build src/index.html --out-dir dist --public-url https://www.dbs.com/design --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
+    "build:test": "rm -rf dist && mkdir .\\dist && set NODE_ENV=production && parcel build src/index.html --out-dir dist --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0",
     "swup": "^2.0.8"
   }
 }
