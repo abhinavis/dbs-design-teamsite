@@ -9,11 +9,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html src/work.html src/people.html src/careers.html",
-    "build:local": "rm -rf dist && NODE_ENV=production parcel build src/index.html --out-dir dist --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
-    "build:local-win": "rm -rf dist && mkdir .\\dist && SET NODE_ENV=production parcel build src/index.html --out-dir dist --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
-    "build": "rm -rf dist && NODE_ENV=production parcel build src/index.html --out-dir dist --public-url https://www.dbs.com/design --target browser --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
-    "build:test": "rm -rf dist && mkdir .\\dist && set NODE_ENV=production && parcel build src/index.html --dist-dir dist --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml"
+    "start": "parcel src/index.html",
+    "build": "rm -rf dist && NODE_ENV=production && parcel build src/index.html --dist-dir dist --public-url https://dbsbank.design --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
+    "build:win": "rm -rf dist && mkdir .\\dist && set NODE_ENV=production && parcel build src/index.html --dist-dir dist --public-url https://dbsbank.design --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml"
   },
   "keywords": [],
   "author": "",
