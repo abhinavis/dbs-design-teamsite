@@ -10,6 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
+    "build:local": "rm -rf dist && NODE_ENV=production && parcel build src/index.html --dist-dir dist --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
+    "build:local-win": "rm -rf dist && mkdir .\\dist && set NODE_ENV=production && parcel build src/index.html --dist-dir dist --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
     "build": "rm -rf dist && NODE_ENV=production && parcel build src/index.html --dist-dir dist --public-url https://dbsbank.design --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml",
     "build:win": "rm -rf dist && mkdir .\\dist && set NODE_ENV=production && parcel build src/index.html --dist-dir dist --public-url https://dbsbank.design --no-content-hash --no-cache --no-source-maps --no-autoinstall && cp src/sitemap.xml dist/sitemap.xml"
   },
