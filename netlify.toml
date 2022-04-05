@@ -1,0 +1,3 @@
+[build]
+  NODE_ENV="production"
+  NODE_VERSION="v14.18.2"

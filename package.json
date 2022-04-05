@@ -12,7 +12,7 @@
     "start": "parcel src/index.html",
     "cleanup-dist": "rimraf dist && mkdirp dist",
     "copy-assets": "cpy src/sitemap.xml dist/sitemap.xml",
-    "parcel-build": "cross-env NODE_ENV=production && parcel build src/index.html --dist-dir dist/",
+    "parcel-build": "parcel build src/index.html --dist-dir dist/",
     "build": "npm run cleanup-dist && npm run parcel-build && npm run copy-assets"
   },
   "keywords": [],
@@ -20,7 +20,6 @@
   "license": "ISC",
   "dependencies": {
     "cpy-cli": "^4.1.0",
-    "cross-env": "^7.0.3",
     "mkdirp": "^1.0.4",
     "parcel": "^2.0.0",
     "rimraf": "^3.0.2",
