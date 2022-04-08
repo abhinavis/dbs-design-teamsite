@@ -454,11 +454,14 @@ html.is-animating .transition-fade {
 .left-side {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.left-side .section-headline {
+  margin-bottom: 20px;
 }
 
 .left-side .section-desc {
-  margin-top: -120px;
   width: 85%;
 }
 
