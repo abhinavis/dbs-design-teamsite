@@ -1000,12 +1000,67 @@ aside > p {
 /************** Section 5 - Awards ***************/
 
 .section-5 {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
+/* list */
+.awards-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  list-style: none;
+}
+
+.awards-list__item {
+  flex: 0 0 320px;
+}
+
+/* card */
+.award {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  min-height: 86px;
+  padding: 0 46px;
+}
+
+.award__title {
+  font-family: var(--font-serif);
+  font-size: var(--size-20);
+  font-weight: var(--weight-bold);
+}
+
+.award__source {
+  font-family: var(--font-sans);
+  font-size: var(--size-16);
+  color: var(--color-dark-grey);
+}
+
+.award__laurel {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 30px;
+  height: 86px;
+}
+
+.award__laurel--left {
+  left: 0;
+}
+
+.award__laurel--right {
+  right: 0;
+}
+
+/*
 .award-1,
 .award-2,
 .award-3 {
@@ -1016,7 +1071,7 @@ aside > p {
   width: 100%;
   object-fit: contain;
   height: 86px;
-}
+} */
 
 /************** Section 7 - Job Section ***************/
 
@@ -1353,8 +1408,8 @@ aside > p {
   }
 
   .section-5 {
-    display: grid;
-    grid-template-columns: auto;
+    /* display: grid;
+    grid-template-columns: auto; */
     /* margin-top: -100px; */
   }
 
