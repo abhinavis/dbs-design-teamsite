@@ -12,7 +12,7 @@
     "start": "parcel src/index.html",
     "cleanup-dist": "rimraf dist && mkdirp dist",
     "copy-assets": "cpy src/sitemap.xml dist/sitemap.xml",
-    "parcel-build": "parcel build src/index.html --dist-dir dist/ --public-url https://dbsbank.design --no-content-hash --no-cache --no-source-maps --no-autoinstall",
+    "parcel-build": "parcel build src/index.html --dist-dir dist/ --no-content-hash --no-cache --no-source-maps --no-autoinstall",
     "build": "npm run cleanup-dist && npm run parcel-build && npm run copy-assets"
   },
   "keywords": [],
