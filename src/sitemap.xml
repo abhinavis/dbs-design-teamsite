@@ -1,79 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-   <url>
-      <loc>https://www.dbs.com/design/index.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>1.00</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/work.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/people.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/careers.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/svp-research-lead.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/avp-content-designer.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/avp-design-producer.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/vp-principal-designer.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/avp-product-designer-1.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.64</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/avp-product-designer-2.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.64</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/sa-product-designer-1.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.64</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/sa-product-designer-2.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.64</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/avp-user-researcher.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.64</priority>
-   </url>
-   <url>
-      <loc>https://www.dbs.com/design/vp-avp-ux-engineer.html</loc>
-      <lastmod>2020-03-04T06:44:40+00:00</lastmod>
-      <priority>0.64</priority>
-   </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://dbsbank.design/</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/index.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/work.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/people.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/careers.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/story-cdo-rainer-wesslers-address.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/story-making-an-impact-with-data-that-matters-with-people-who-matter.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/story-growing-as-a-designer-and-beyond-every-day.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/story-shaping-the-banks-first-ux-engineering-team.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/story-paying-it-forward-with-a-growth-mindset.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/story-tackling-challenges-with-an-inclusive-team.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-cbg-avp-team-lead-product-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-cbg-avp-vp-design-standard-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-cbg-sa-avp-content-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-ibg-sa-product-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-ibg-associate-sa-product-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-ibg-avp-product-designer-lead.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-enterprise-associate-product-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-enterprise-sa-product-designer.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-enterprise-sa-avp-ux-researcher.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dbsbank.design/jd-enterprise-svp-lead-design-manager.html</loc>
+  <lastmod>2022-04-29T05:51:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
