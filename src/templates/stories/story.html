@@ -115,11 +115,14 @@
               <div class="story-body__cta-item">
                 <h3 class="story-body__cta-title">
                   Apply as a<br/>
-                  UX Researcher
+                  {ROLE}
                 </h3>
                 <p class="story-body__cta-excerpt">
                   Write to us with your portfolio and resume at
-                  <a class="story-body__cta-a" href="mailto:design@dbs.com">
+                  <a
+                    id=""
+                    class="story-body__cta-a"
+                    href="mailto:design@dbs.com?subject=[Application] {ROLE}">
                     design@dbs.com
                   </a>
                 </p>
@@ -136,6 +139,7 @@
                     <ul class="story-body__cta-role-list">
                       <li class="story-body__cta-role-item">
                         <a
+                          id=""
                           class="story-body__cta-a"
                           href="{ROLE_LINK}">
                           {ROLE_TITLE}
