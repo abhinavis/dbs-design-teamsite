@@ -881,6 +881,10 @@ aside > p {
   font-size: var(--size-16);
 }
 
+.pointers a {
+  color: #ff5678;
+}
+
 .apply-button {
   display: inline-block;
   font-family: var(--font-sans);
